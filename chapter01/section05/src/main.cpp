@@ -65,3 +65,26 @@ int main(int argc,char* argv[])
 
     return 0;
 }
+
+/*
+
+int main(void)
+{
+    int c = 0;
+    while (EOF != (c = getc(stdin)))
+    {
+        if(putc(c,stdout) == EOF)
+        {
+            err_sys("output error.");
+        }
+    }
+
+    if(ferror(stdin))
+    {
+        err_sys("input error.");
+    }
+    
+    return 0;
+}
+
+*/
